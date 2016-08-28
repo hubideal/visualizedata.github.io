@@ -32,8 +32,10 @@
   <!--<li>Data Competition</li>-->
   <!--<li>Position</li>-->
   <!--<li>New School Affiliated</li>-->
-  <!--<li>Paid and Unpaid</li>-->
-  <!--<li>Full and Part Time</li>-->
+  <!--<li>Paid</li>-->
+  <!--<li>Unpaid<li>-->
+  <!--<li>Full Time</li>-->
+  <!--<li>Part Time</li>-->
   <!--<li>Grants and Fellowships</li>-->
   <!--<li>Eligibility for Academic Credit</li>-->
   <!--<li>Date Added</li>-->
@@ -67,7 +69,7 @@
           
         container.append("h3")
           .attr("class", "dateAdded")
-          .text(function(d) { return d.dateAdded; });
+          .text(function(d) { return "added: " + d.dateAdded; });
           
         container.append("p")
           .attr("class", "description")
@@ -78,5 +80,17 @@
       
   </script>
   
+
+var tags = ["data source", "dataResources", "newSchool", "unpaidPosition", "parttimePosition", "fulltimePosition", "grantFellowship", "eligibleAcademic", "timeSensitive"];
+var arrayLength = tags.length;
+for (var i = 0; i < arrayLength; i++) {
+    alert(tags[i]);
+    if i === true;
+      return i;
+    }
+    
 </body>
 </html>
+
+
+
